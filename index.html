@@ -1,112 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Pilot Resume: Kubeshan Govender</title>
-  <link rel="stylesheet" href="style.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pilot Resume: Kubeshan Govender</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-  <div class="hud-container">
-    <header>
-      <img src="profile.jpg" alt="Pilot Portrait" class="profile-img" />
-      <h1>Kubeshan Govender</h1>
-      <p class="tagline">Pilot ID: #9502 | System Developer | Racer | Debug Navigator</p>
-    </header>
+    <div class="hud-container">
+        <header>
+            <img src="profile.jpg" alt="Pilot Portrait" class="profile-img" />
+            <h1>Kubeshan Govender</h1>
+            <p class="tagline">Pilot ID: #9502 | System Developer | Racer | Debug Navigator</p>
+        </header>
 
-    <section class="hud-section">
-      <h2>🚀 Flight Bio</h2>
-      <p>
-        Final-year BSc student in Applied Mathematics & Computer Science. Passionate about crafting immersive code-driven experiences, from racetracks to runways. I engineer logic, design systems, and debug like a co-pilot in a digital sky.
-      </p>
-    </section>
+        <section class="hud-section">
+            <h2>🚀 Flight Bio</h2>
+            <p>
+                Final-year BSc student in Applied Mathematics & Computer Science. Passionate about crafting immersive
+                code-driven experiences, from racetracks to runways. I engineer logic, design systems, and debug like a
+                co-pilot in a digital sky.
+            </p>
+        </section>
 
-    <section class="hud-section">
-      <h2>🎓 Training & Certifications</h2>
-      <ul>
-        <li>
-          <strong>FNB App Academy</strong> – Certification in Full Stack Development
-          <br/>
-          <button onclick="toggleCertificate()">🖼️ View Certificate</button>
-          <div id="certificateContainer" style="display: none; margin-top: 10px;">
-            <img src="fnb-certificate.jpg" alt="FNB App Academy Certificate" style="max-width: 100%; border: 2px solid #00ffe1; border-radius: 8px;" />
-          </div>
-        </li>
-        <li><strong>University of South Africa</strong> (2021–Present) – BSc in Applied Mathematics & Computer Science</li>
-        <li><strong>Mount View Secondary School</strong> (2020) – NSC with IT, Physical Sciences, Maths</li>
-      </ul>
-    </section>
+        <section class="hud-section">
+            <h2>🎓 Training & Certifications</h2>
+            <ul>
+                <li>
+                    <strong>FNB App Academy</strong> – Certification in Full Stack Development
+                    <br />
+                    <button onclick="toggleCertificate('certAppAcademy')">📜 Deploy Certificate</button>
+                    <div id="certAppAcademy" style="display: none; margin-top: 10px;">
+                        <img src="fnb-certificate.jpg" alt="FNB App Academy"
+                            style="max-width: 100%; border: 2px solid #00ffe1; border-radius: 8px;" />
+                    </div>
+                </li>
+
+                <li><strong>University of South Africa</strong> (2023–Present) – BSc in Applied Mathematics & Computer
+                    Science</li>
+
+                <li>
+                    <strong>Mount View Secondary School</strong> (2020) – NSC with IT, Physical Sciences, Maths
+                    <br />
+                    <button onclick="toggleCertificate('certSchool1')">📜 Deploy NSC</button>
+                    <div id="certSchool1" style="display: none; margin-top: 10px;">
+                        <img src="NSC-certificate.jpg" alt="School Certificate 1"
+                            style="max-width: 100%; border: 2px solid #00ffe1; border-radius: 8px;" />
+                    </div>
+
+                    <br />
+
+                    <button onclick="toggleCertificate('certSchool2')">📜 Deploy Merit</button>
+                    <div id="certSchool2" style="display: none; margin-top: 10px;">
+                        <img src="Matric-Merit.jpg" alt="School Certificate 2"
+                            style="max-width: 100%; border: 2px solid #00ffe1; border-radius: 8px;" />
+                    </div>
+                </li>
+            </ul>
+        </section>
 
 
-    <section class="hud-section">
-      <h2>📜 Flight Log: Work Experience</h2>
-      <div class="job">
-        <h3>🖥️ Faith Trucking – IT Systems Navigator</h3>
-        <em>2023–Present</em>
-        <ul>
-          <li>Deployed systems to increase operational efficiency</li>
-          <li>Maintained internal hardware and data integrity</li>
-        </ul>
-      </div>
-      <div class="job">
-        <h3>🔧 Faith Trucking – Maintenance Wingman</h3>
-        <em>2023–2024</em>
-        <ul>
-          <li>Performed diagnostics and routine checks</li>
-          <li>Assisted in fleet maintenance for heavy duty vehicles</li>
-        </ul>
-      </div>
-      <div class="job">
-        <h3>🎪 Faith Marquee Hire – Marquee Setup Crew</h3>
-        <em>2022–2023</em>
-        <ul>
-          <li>Assisted with event setups under tight deadlines</li>
-          <li>Coordinated structure deployment with teams</li>
-        </ul>
-      </div>
-    </section>
 
-    <section class="hud-section">
-      <h2>⚙️ Gear Shift: Skills Unlocked</h2>
-      <ul class="skill-list">
-        <li>Unity & C# for game development</li>
-        <li>HTML, CSS, JavaScript UI systems</li>
-        <li>Microsoft Office (Data Systems)</li>
-        <li>Hardware & Network Configuration</li>
-        <li>Flight-debugging: Problem Solver</li>
-        <li>Squad-based Communication XP +10</li>
-      </ul>
-    </section>
+        <section class="hud-section">
+            <h2>📋 Flight Log: Work Experience</h2>
+            <div class="job">
+                <h3>🖥️ Faith Trucking – IT Systems Navigator</h3>
+                <em>2023–Present</em>
+                <ul>
+                    <li>Deployed systems to increase operational efficiency</li>
+                    <li>Maintained internal hardware and data integrity</li>
+                </ul>
+            </div>
+            <div class="job">
+                <h3>🔧 Faith Trucking – Maintenance Wingman</h3>
+                <em>2023–2024</em>
+                <ul>
+                    <li>Performed diagnostics and routine checks</li>
+                    <li>Assisted in fleet maintenance for heavy duty vehicles</li>
+                </ul>
+            </div>
+            <div class="job">
+                <h3>🎪 Faith Marquee Hire – Marquee Setup Crew</h3>
+                <em>2022–2023</em>
+                <ul>
+                    <li>Assisted with event setups under tight deadlines</li>
+                    <li>Coordinated structure deployment with teams</li>
+                </ul>
+            </div>
+        </section>
 
-    <section class="hud-section">
-      <h2>📡 Comms Channel</h2>
-      <p><strong>📞 Radio:</strong> 068-377-9310</p>
-      <p><strong>📧 Uplink:</strong> kubeshangovender040908@gmail.com</p>
-    </section>
+        <section class="hud-section">
+            <h2>⚙️ Gear Shift: Skills Unlocked</h2>
+            <ul class="skill-list">
+                <li>Unity & C# for game development</li>
+                <li>HTML, CSS, JavaScript UI systems</li>
+                <li>Microsoft Office (Data Systems)</li>
+                <li>Hardware & Network Configuration</li>
+                <li>Flight-debugging: Problem Solver</li>
+                <li>Squad-based Communication XP +10</li>
+            </ul>
+        </section>
 
-    <footer>
-      <p>🔒 Enter Konami Code for Dev Unlock...</p>
-    </footer>
-  </div>
+        <section class="hud-section">
+            <h2>📡 Comms Channel</h2>
+            <p><strong>📞 Radio:</strong> 068-377-9310</p>
+            <p><strong>📧 Uplink:</strong> kubeshangovender040908@gmail.com</p>
+        </section>
 
-  <script>
-    const konamiCode = [38,38,40,40,37,39,37,39,66,65];
-    let input = [];
-    window.addEventListener("keydown", (e) => {
-      input.push(e.keyCode);
-      input.splice(-konamiCode.length - 1, input.length - konamiCode.length);
-      if (input.join("") === konamiCode.join("")) {
-        alert("🛸 Secret Mode Activated: Developer Mode Unlocked!");
-      }
-    });
+        <footer>
+            <p>🔒 Enter Konami Code for Dev Unlock...</p>
+        </footer>
+    </div>
 
-    function toggleCertificate() {
-  const container = document.getElementById('certificateContainer');
-  container.style.display = container.style.display === 'none' ? 'block' : 'none';}
-  </script>
+    <script>
+        const konamiCode = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65];
+        let input = [];
+        window.addEventListener("keydown", (e) => {
+            input.push(e.keyCode);
+            input.splice(-konamiCode.length - 1, input.length - konamiCode.length);
+            if (input.join("") === konamiCode.join("")) {
+                alert("🛸 Secret Mode Activated: Developer Mode Unlocked!");
+            }
+        });
+
+        function toggleCertificate(id) {
+            const container = document.getElementById(id);
+            container.style.display = container.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
 </body>
+
 </html>
-
-
-
