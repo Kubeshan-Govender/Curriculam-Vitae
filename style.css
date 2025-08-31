@@ -1,0 +1,78 @@
+body {
+  font-family: 'Orbitron', sans-serif;
+  background: radial-gradient(#000000, #0f0f0f);
+  color: #00ffe1;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.hud-container {
+  width: 90%;
+  max-width: 960px;
+  margin: 40px auto;
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.85);
+  border: 2px solid #00ffe1;
+  border-radius: 12px;
+  box-shadow: 0 0 20px #00ffe1;
+}
+
+header {
+  text-align: center;
+  border-bottom: 2px dashed #00ffe1;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+.profile-img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #00ffe1;
+  box-shadow: 0 0 10px #00ffe1;
+}
+
+h1 {
+  margin: 10px 0 5px;
+  font-size: 1.6em;
+}
+
+.tagline {
+  font-size: 0.85em;
+  color: #87faff;
+}
+
+.hud-section {
+  margin-top: 30px;
+}
+
+.hud-section h2 {
+  font-size: 1.1em;
+  color: #000000;
+  background: #00ffe1;
+  display: inline-block;
+  padding: 5px 12px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: square;
+  margin-left: 20px;
+  font-size: 0.9em;
+}
+
+.skill-list {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  color: #777;
+  font-size: 0.75em;
+}

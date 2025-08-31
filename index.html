@@ -1,9 +1,96 @@
 <!DOCTYPE html>
-<html lang = "en">
-    <head>
-        <title>Hello</title>
-    </head>
-    <body>
-        Hello My friend Dan!
-    </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pilot Resume: Kubeshan Govender</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="hud-container">
+    <header>
+      <img src="profile.jpg" alt="Pilot Portrait" class="profile-img" />
+      <h1>Kubeshan Govender</h1>
+      <p class="tagline">Pilot ID: #9502 | System Developer | Racer | Debug Navigator</p>
+    </header>
+
+    <section class="hud-section">
+      <h2>🚀 Flight Bio</h2>
+      <p>
+        Final-year BSc student in Applied Mathematics & Computer Science. Passionate about crafting immersive code-driven experiences, from racetracks to runways. I engineer logic, design systems, and debug like a co-pilot in a digital sky.
+      </p>
+    </section>
+
+    <section class="hud-section">
+      <h2>🎓 Training & Certifications</h2>
+      <ul>
+        <li><strong>University of South Africa</strong> (2021–Present) – BSc in Applied Mathematics & Computer Science</li>
+        <li><strong>Mount View Secondary School</strong> (2020) – NSC with IT, Physical Sciences, Maths</li>
+      </ul>
+    </section>
+
+    <section class="hud-section">
+      <h2>📜 Flight Log: Work Experience</h2>
+      <div class="job">
+        <h3>🖥️ Faith Trucking – IT Systems Navigator</h3>
+        <em>2023–Present</em>
+        <ul>
+          <li>Deployed systems to increase operational efficiency</li>
+          <li>Maintained internal hardware and data integrity</li>
+        </ul>
+      </div>
+      <div class="job">
+        <h3>🔧 Faith Trucking – Maintenance Wingman</h3>
+        <em>2023–2024</em>
+        <ul>
+          <li>Performed diagnostics and routine checks</li>
+          <li>Assisted in fleet maintenance for heavy duty vehicles</li>
+        </ul>
+      </div>
+      <div class="job">
+        <h3>🎪 Mt Azenga Hire – Marquee Setup Crew</h3>
+        <em>2022–2023</em>
+        <ul>
+          <li>Assisted with event setups under tight deadlines</li>
+          <li>Coordinated structure deployment with teams</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="hud-section">
+      <h2>⚙️ Gear Shift: Skills Unlocked</h2>
+      <ul class="skill-list">
+        <li>Unity & C# for game development</li>
+        <li>HTML, CSS, JavaScript UI systems</li>
+        <li>Microsoft Office (Data Systems)</li>
+        <li>Hardware & Network Configuration</li>
+        <li>Flight-debugging: Problem Solver</li>
+        <li>Squad-based Communication XP +10</li>
+      </ul>
+    </section>
+
+    <section class="hud-section">
+      <h2>📡 Comms Channel</h2>
+      <p><strong>📞 Radio:</strong> 084-377-3350</p>
+      <p><strong>📧 Uplink:</strong> kubeshan.govender9502@gmail.com</p>
+    </section>
+
+    <footer>
+      <p>🔒 Enter Konami Code for Dev Unlock...</p>
+    </footer>
+  </div>
+
+  <script>
+    const konamiCode = [38,38,40,40,37,39,37,39,66,65];
+    let input = [];
+    window.addEventListener("keydown", (e) => {
+      input.push(e.keyCode);
+      input.splice(-konamiCode.length - 1, input.length - konamiCode.length);
+      if (input.join("") === konamiCode.join("")) {
+        alert("🛸 Secret Mode Activated: Developer Mode Unlocked!");
+      }
+    });
+  </script>
+</body>
 </html>
