@@ -76,3 +76,15 @@ footer {
   color: #777;
   font-size: 0.75em;
 }
+
+.project-list a {
+  color: #00ffe1;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.project-list a:hover {
+  color: #ff3cbe;
+  text-decoration: underline;
+}
+
