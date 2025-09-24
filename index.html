@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
 </head>
 
 <body>
@@ -32,12 +33,20 @@
                     <strong>University of South Africa</strong> — BSc Applied Mathematics & Computer Science
                     <br />
                     <em>2023 – Present</em>
+                    <br />
+                    <button onclick="toggleCertificate('academicRecordPDF')">View University Module List</button>
+                    <div id="academicRecordPDF" style="display: none; margin-top: 10px;">
+                        <iframe src="Academic-Record.pdf" width="100%" height="500px" style="border:1px solid #ccc;">
+                            This browser does not support PDFs. Please download the PDF to view it:
+                            <a href="Academic-Record.pdf">Download PDF</a>
+                        </iframe>
+                    </div>
                 </li>
 
                 <li>
-                    <strong>Mount View Secondary School</strong> — NSC (Maths, IT, Physical Sciences)
+                    <strong>Mount View Secondary School</strong> — NSC (Maths, IT, Physical Sciences, Life Sciences)
                     <br />
-                    <em>Graduated 2020</em>
+                    <em>Graduated 2022</em>
                     <br />
                     <button onclick="toggleCertificate('certNSC')">View NSC Certificate</button>
                     <div id="certNSC" style="display: none; margin-top: 10px;">
@@ -51,7 +60,7 @@
                 </li>
 
                 <li>
-                    <strong>FNB App Academy</strong> — Certificate in Full Stack Development
+                    <strong>FNB App Academy 2025</strong> — Certificate in Full Stack Development
                     <br />
                     <button onclick="toggleCertificate('certFNB')">View Certificate</button>
                     <div id="certFNB" style="display: none; margin-top: 10px;">
@@ -127,13 +136,8 @@
                     </a>
                 </li>
                 <li>
-                    <a href="https://github.com/Kubeshan-Govender/RGP_2.git" target="_blank" data-aos="fade-left" data-aos-delay="600" data-aos-duration="600">
-                        RGP 2 – F1-themed game built with C++ and Qt
-                    </a>
-                </li>
-                <li>
                     <a href="https://github.com/Kubeshan-Govender/RGP_3.git" target="_blank" data-aos="fade-left" data-aos-delay="650" data-aos-duration="600">
-                        RGP 3 – Successor game built in Unity for Android
+                        RGP 3 – F1 themed game built using Unity and C#, will be updated in future
                     </a>
                 </li>
                 <li>
@@ -147,12 +151,17 @@
         <section class="section" data-aos="fade-up" data-aos-delay="600" data-aos-duration="800">
             <h2>Contact</h2>
             <p>
-                <strong>Phone:</strong>
+                <strong><i class="fas fa-phone"></i> Phone:</strong>
                 <a href="tel:0683779310">068-377-9310</a>
             </p>
             <p>
-                <strong>Email:</strong>
+                <strong><i class="fas fa-envelope"></i> Email:</strong>
                 <a href="mailto:kubeshangovender040908@gmail.com">kubeshangovender040908@gmail.com</a>
+            </p>
+            <p>
+                <a href="Kubeshan-Govender-CV.pdf" download class="download-btn">
+                    <i class="fas fa-file-pdf"></i> Download CV (PDF)
+                </a>
             </p>
         </section>
 
