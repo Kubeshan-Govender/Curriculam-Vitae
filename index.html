@@ -4,175 +4,178 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pilot Resume: Kubeshan Govender</title>
+    <title>Kubeshan Govender | Portfolio</title>
     <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
 </head>
 
 <body>
-    <div class="hud-container">
-        <header>
-            <img src="profile.jpg" alt="Pilot Portrait" class="profile-img" />
+    <div class="container">
+        <header data-aos="fade-down" data-aos-delay="100" data-aos-duration="1000">
+            <img src="profile.jpg" alt="Profile Photo" class="profile-img" data-aos="zoom-in" data-aos-delay="300" />
             <h1>Kubeshan Govender</h1>
-            <p class="tagline">System Developer | Racer | Debug Navigator | Simulated Pilot</p>
+            <p class="tagline">Aspiring Software Developer | BSc in Applied Mathematics & Computer Science</p>
         </header>
 
-        <section class="hud-section">
-            <h2>🚀 Flight Bio</h2>
+        <section class="section" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
+            <h2>About me</h2>
             <p>
-                Final-year BSc student in Applied Mathematics & Computer Science. Passionate about crafting immersive
-                code-driven experiences, from racetracks to runways. I engineer logic, design systems, and debug like a
-                co-pilot in a digital sky.
+                Final-year BSc student in Applied Mathematics and Computer Science with hands-on experience in software development, system support, and collaborative projects. Passionate about solving real-world problems through code and continuously learning modern development tools and practices.
             </p>
         </section>
 
-        <section class="hud-section">
-            <h2>🎓 Training & Certifications</h2>
+        <section class="section" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
+            <h2>Education & Certifications</h2>
             <ul>
                 <li>
-                    <strong>Inter-Varsity Hackathon 2025</strong> – Certificate of participation
+                    <strong>University of South Africa</strong> — BSc Applied Mathematics & Computer Science
                     <br />
-                    <button onclick="toggleCertificate('certInterVarsity')">📜 Deploy Certificate</button>
-                    <div id="certInterVarsity" style="display: none; margin-top: 10px;">
-                        <img src="InterVarsity.jpg" alt="Inter-Varsity Hackathon"
-                            style="max-width: 50%; border: 2px solid #00ffe1; border-radius: 8px;" />
-                    </div>
-                </li>
-                
-                <li>
-                    <strong>FNB App Academy</strong> – Certification in Full Stack Development
-                    <br />
-                    <button onclick="toggleCertificate('certAppAcademy')">📜 Deploy Certificate</button>
-                    <div id="certAppAcademy" style="display: none; margin-top: 10px;">
-                        <img src="fnb-certificate.jpg" alt="FNB App Academy"
-                            style="max-width: 100%; border: 2px solid #00ffe1; border-radius: 8px;" />
-                    </div>
+                    <em>2023 – Present</em>
                 </li>
 
-                <li><strong>University of South Africa</strong> (2023–Present) – BSc in Applied Mathematics & Computer
-                    Science</li>
-
                 <li>
-                    <strong>Mount View Secondary School</strong> (2020) – NSC with IT, Physical Sciences, Maths
+                    <strong>Mount View Secondary School</strong> — NSC (Maths, IT, Physical Sciences)
                     <br />
-                    <button onclick="toggleCertificate('certSchool1')">📜 Deploy NSC</button>
-                    <div id="certSchool1" style="display: none; margin-top: 10px;">
-                        <img src="NSC-certificate.jpg" alt="School Certificate 1"
-                            style="max-width: 100%; border: 2px solid #00ffe1; border-radius: 8px;" />
+                    <em>Graduated 2020</em>
+                    <br />
+                    <button onclick="toggleCertificate('certNSC')">View NSC Certificate</button>
+                    <div id="certNSC" style="display: none; margin-top: 10px;">
+                        <img src="NSC-certificate.jpg" alt="NSC Certificate" class="certificate-img" />
                     </div>
 
-                    <br />
+                    <button onclick="toggleCertificate('certMerit')">View Merit Certificate</button>
+                    <div id="certMerit" style="display: none; margin-top: 10px;">
+                        <img src="Matric-Merit.jpg" alt="Merit Certificate" class="certificate-img" />
+                    </div>
+                </li>
 
-                    <button onclick="toggleCertificate('certSchool2')">📜 Deploy Merit</button>
-                    <div id="certSchool2" style="display: none; margin-top: 10px;">
-                        <img src="Matric-Merit.jpg" alt="School Certificate 2"
-                            style="max-width: 100%; border: 2px solid #00ffe1; border-radius: 8px;" />
+                <li>
+                    <strong>FNB App Academy</strong> — Certificate in Full Stack Development
+                    <br />
+                    <button onclick="toggleCertificate('certFNB')">View Certificate</button>
+                    <div id="certFNB" style="display: none; margin-top: 10px;">
+                        <img src="fnb-certificate.jpg" alt="FNB Certificate" class="certificate-img" />
+                    </div>
+                </li>
+
+                <li>
+                    <strong>Inter-Varsity Hackathon 2025</strong> — Participant
+                    <br />
+                    <button onclick="toggleCertificate('certHackathon')">View Certificate</button>
+                    <div id="certHackathon" style="display: none; margin-top: 10px;">
+                        <img src="InterVarsity.jpg" alt="Hackathon Certificate" class="certificate-img" />
                     </div>
                 </li>
             </ul>
         </section>
 
+        <section class="section" data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
+            <h2>Work Experience</h2>
 
-
-        <section class="hud-section">
-            <h2>📋 Flight Log: Work Experience</h2>
-            <div class="job">
-                <h3>🖥️ Faith Trucking – IT Systems Navigator</h3>
-                <em>2023–Present</em>
+            <div class="job" data-aos="fade-right" data-aos-delay="350" data-aos-duration="700">
+                <h3>Regional Representative & Deputy Treasurer – Unisa Developer Society (UDS)</h3>
+                <em>April 2025 – Present</em>
                 <ul>
-                    <li>Deployed systems to increase operational efficiency</li>
-                    <li>Maintained internal hardware and data integrity</li>
+                    <li>Represented the UDS in the KwaZulu-Natal region, engaging with student members and university stakeholders</li>
+                    <li>Assisted in managing the society’s finances, including tracking expenses and estimating budgets</li>
+                    <li>Supported the Treasurer with account reconciliation and co-management of the society bank account</li>
                 </ul>
             </div>
-            <div class="job">
-                <h3>🔧 Faith Trucking – Maintenance Wingman</h3>
-                <em>2023–2024</em>
+
+            <div class="job" data-aos="fade-right" data-aos-delay="400" data-aos-duration="700">
+                <h3>IT Support, Admin & Fleet Maintenance Assistant – Faith Trucking</h3>
+                <em>2023 – Present</em>
                 <ul>
-                    <li>Performed diagnostics and routine checks</li>
-                    <li>Assisted in fleet maintenance for heavy duty vehicles</li>
+                    <li>Automated delivery note data capture processes to improve efficiency and accuracy</li>
+                    <li>Handled invoicing, generated statements, and managed client communications via email</li>
+                    <li>Maintained office computer systems and provided mechanical support (repairs, tyre changes, trailer hitching)</li>
+                    <li>Assisted in diesel truck maintenance and daily yard operations</li>
                 </ul>
             </div>
-            <div class="job">
-                <h3>🎪 Faith Marquee Hire – Marquee Setup Crew</h3>
-                <em>2022–2023</em>
+
+            <div class="job" data-aos="fade-right" data-aos-delay="450" data-aos-duration="700">
+                <h3>Marquee Rigger – Faith Marquee Hire</h3>
+                <em>2019 – 2023</em>
                 <ul>
-                    <li>Assisted with event setups under tight deadlines</li>
-                    <li>Coordinated structure deployment with teams</li>
+                    <li>Installed, dismantled, and maintained marquee and event structures for private and corporate events</li>
+                    <li>Worked collaboratively in high-pressure environments to meet strict event deadlines</li>
                 </ul>
             </div>
         </section>
 
-        <section class="hud-section">
-            <h2>⚙️ Gear Shift: Skills Unlocked</h2>
+        <section class="section" data-aos="fade-up" data-aos-delay="400" data-aos-duration="800">
+            <h2>Technical Skills</h2>
             <ul class="skill-list">
-                <li>Unity & C# for game development</li>
-                <li>HTML, CSS, JavaScript UI systems</li>
-                <li>Microsoft Office (Data Systems)</li>
+                <li>HTML, CSS, JavaScript</li>
+                <li>Unity (C#) Game Development</li>
+                <li>C++ & Qt Framework</li>
+                <li>Full Stack Development</li>
+                <li>Microsoft Office & Data Systems</li>
                 <li>Hardware & Network Configuration</li>
-                <li>Flight-debugging: Problem Solver</li>
-                <li>Squad-based Communication XP +10</li>
+                <li>Debugging & Problem Solving</li>
+                <li>Team Collaboration & Communication</li>
             </ul>
         </section>
 
-        <section class="hud-section">
-            <h2>📡 Comms Channel</h2>
-            <p><strong>📞 Radio:</strong> 068-377-9310</p>
-            <p><strong>📧 Uplink:</strong> kubeshangovender040908@gmail.com</p>
-        </section>
-
-        <section class="hud-section">
-            <h2>💻 Hangar: GitHub Projects</h2>
+        <section class="section" data-aos="fade-up" data-aos-delay="500" data-aos-duration="800">
+            <h2>Projects</h2>
             <ul class="project-list">
                 <li>
-                    <a href="https://github.com/Kubeshan-Govender/Car-Dealership.git" target="_blank">
-                        🚗 Car Dealership Website – Static Website built for a family member
+                    <a href="https://github.com/Kubeshan-Govender/Car-Dealership.git" target="_blank" data-aos="fade-left" data-aos-delay="550" data-aos-duration="600">
+                        Car Dealership Website – Static Website built for a small business
                     </a>
                 </li>
                 <li>
-                    <a href="https://github.com/Kubeshan-Govender/RGP_2.git" target="_blank">
-                        🏎️ RGP 2 – F1 game with a random output of who wins built with C++ and Qt
+                    <a href="https://github.com/Kubeshan-Govender/RGP_2.git" target="_blank" data-aos="fade-left" data-aos-delay="600" data-aos-duration="600">
+                        RGP 2 – F1-themed game built with C++ and Qt
                     </a>
                 </li>
                 <li>
-                    <a href="https://github.com/Kubeshan-Govender/RGP_3.git" target="_blank">
-                        🏎️ RGP 3 – A successor to RGP_2 using Unity and made into an android app
+                    <a href="https://github.com/Kubeshan-Govender/RGP_3.git" target="_blank" data-aos="fade-left" data-aos-delay="650" data-aos-duration="600">
+                        RGP 3 – Successor game built in Unity for Android
                     </a>
                 </li>
                 <li>
-                    <a href="https://github.com/Kubeshan-Govender/Curriculam-Vitae.git" target="_blank">
-                        🌐 Portfolio Website – This very site, built with HTML/CSS/JS
+                    <a href="https://github.com/Kubeshan-Govender/Curriculam-Vitae.git" target="_blank" data-aos="fade-left" data-aos-delay="700" data-aos-duration="600">
+                        Portfolio Website – Built using HTML, CSS, and JavaScript
                     </a>
                 </li>
             </ul>
         </section>
 
+        <section class="section" data-aos="fade-up" data-aos-delay="600" data-aos-duration="800">
+            <h2>Contact</h2>
+            <p>
+                <strong>Phone:</strong>
+                <a href="tel:0683779310">068-377-9310</a>
+            </p>
+            <p>
+                <strong>Email:</strong>
+                <a href="mailto:kubeshangovender040908@gmail.com">kubeshangovender040908@gmail.com</a>
+            </p>
+        </section>
 
-        <footer>
-            <p>🔒 Enter Konami Code for Dev Unlock...</p>
+        <footer data-aos="fade-up" data-aos-delay="700" data-aos-duration="800">
+            <p>&copy; 2025 Kubeshan Govender. All rights reserved.</p>
         </footer>
     </div>
 
-
     <script>
-        const konamiCode = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65];
-        let input = [];
-        window.addEventListener("keydown", (e) => {
-            input.push(e.keyCode);
-            input.splice(-konamiCode.length - 1, input.length - konamiCode.length);
-            if (input.join("") === konamiCode.join("")) {
-                alert("🛸 Secret Mode Activated: Developer Mode Unlocked!");
-            }
-        });
-
         function toggleCertificate(id) {
-            const container = document.getElementById(id);
-            container.style.display = container.style.display === 'none' ? 'block' : 'none';
+            const el = document.getElementById(id);
+            el.style.display = el.style.display === "none" ? "block" : "none";
         }
     </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,    // animation duration in ms
+            once: true        // whether animation should happen only once while scrolling down
+        });
+    </script>
+
 </body>
 
-
 </html>
-
-
-
